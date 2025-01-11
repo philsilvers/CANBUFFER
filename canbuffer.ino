@@ -159,7 +159,8 @@ void myUserFunc(Message *msg,MergCBUS *mcbus){
   // byte CBUSOpc = msg->getOpc(); // Get The OPCODE from Message
    //int nodeNumber = msg->getNodeNumber(); // Get The Node Number from Message
    int eventNumber = msg->getEventNumber(); // Get The Event Number from Message
-   int eventVariable1 = mcbus->getEventVar(msg,1);
+   int eventVariable1 = mcbus->getEventVar(msg,1); // set to 255 to invert output
+   int eventvariable2 = mcbus->getEventVar(msg,2); // number of events generated
        
      
    
