@@ -1,8 +1,7 @@
-# CANBUFFER ver1a
-  * Can be used in conjunction with CANGATE as an allternative way to produce a 'self consumed' event
-  * Outputs of CANGATE can be fed into inputs
-  * Setting Event variable 1 to 255 will invert the output event
-  * Node Variable 1 is used to either use the same incoming event number  or to multiply the event number by 10
-  * Setting NV1 to 1 - same event number in and our e.g. input 210 output 210
-  * Setting NV1 to 10 multiplies the event number by 10 e.g. input 210 output 2100
-  * Philip Silver MERG Member 4082
+# CANBUFFER version 1c
+  *  A Simple buffer. Receives an event and sends an event with same event numer.
+  *  A way of producing a 'self consumed' event for CANGATE
+  *  Set EV1 to the value of 1 if using with output of CANAGTE
+  *  EV2 must be set to a value of 1 to 5. This will determine the number of events produced
+  *  EV3 is invert output. Set to 255 to invert. Leave at 0 for normal.
+  *  Philip Silver MERG Member 4082
