@@ -239,13 +239,13 @@ void myUserFunc(Message *msg,MergCBUS *mcbus){
                    if (invert == 255){
                     if (mcbus->isAccOn()== true){
                         cbus.sendOffEvent(true, (baseEvent1 + newNode + eventNumber));
-                        cbus.sendOnEvent(true, (baseEvent2 + newNode + eventNumber));
+                        cbus.sendOffEvent(true, (baseEvent2 + newNode + eventNumber));
                         }
                      }
                      if (invert == 255){
                      if (mcbus->isAccOff()== true) {
                       cbus.sendOnEvent(true, (baseEvent1 + newNode + eventNumber));
-                      cbus.sendOffEvent(true, (baseEvent2 + newNode + eventNumber));
+                      cbus.sendOnEvent(true, (baseEvent2 + newNode + eventNumber));
                         }
                      }
 
