@@ -103,15 +103,15 @@ void setup () {
   cbus.getNodeId()->setNodeName("BUFFER",6);       //node name shows in FCU when first detected set your own name for each module - max 8 characters
   cbus.getNodeId()->setModuleId(134);               //module number - set above 100 to avoid conflict with other MERG CBUS modules
   cbus.getNodeId()->setManufacturerId(0xA5);        //MERG code
-  cbus.getNodeId()->setMinCodeVersion(0x62);        //Version b
+  cbus.getNodeId()->setMinCodeVersion(0x63);        //Version c
   cbus.getNodeId()->setMaxCodeVersion(1);           // version 1
   cbus.getNodeId()->setProducerNode(true);          //Produce Node - Set True if Producer Module
   cbus.getNodeId()->setConsumerNode(true);          //Consumer Node = Set True if Consumer Module
-  cbus.getNodeId()->setConsumeEvents(false);         // consume own event COE
+  cbus.getNodeId()->setConsumeEvents(false);        // consume own event COE
   cbus.getNodeId()->setTransportType(1);            // 1 CAN  2 ETHERNET 3 MiWi
   cbus.getNodeId()->setBetaRelease(0);              // Beta Release set to zero for release version
   cbus.getNodeId()->setSuportBootLoading(false);    // Allways set false - no bootloading
-  //cbus.getNodeId()->setCpuType(50);                  // Physical Chip see cbusdefs
+  //cbus.getNodeId()->setCpuType(50);               // Physical Chip see cbusdefs
   cbus.getNodeId()->setCpuManufacturer(2);          //1 MICROCHIP  2  ATMEL  3 ARM
 
 
